@@ -47,6 +47,7 @@
 
 import React, { Component } from 'react';
 import Player from '../components/Video';
+import { playback } from '../config';
 
 const sampleData = [
   {
@@ -62,7 +63,7 @@ const sampleData = [
 ];
 export default class Landing extends Component {
   render() {
-    const video_url = 'https://stream.mux.com/D102eGs8Dr68O302QHk16eTjpnODu4ovpSWM00E7WMKbc00.m3u8';
+    const video_url = playback;
     const video_type = 'application/x-mpegURL'
     const videoJsOptions = {
       autoplay: true,
