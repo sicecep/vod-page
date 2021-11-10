@@ -68,6 +68,8 @@ export default class Landing extends Component {
     const videoJsOptions = {
       autoplay: true,
       controls: true,
+      width: 854,
+      height: 480,
       sources: [
         {
           src: video_url,
